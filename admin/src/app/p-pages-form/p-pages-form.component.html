@@ -1,0 +1,20 @@
+<h1>{{ pageName }}</h1>
+
+<form action="" method="post" class="mt-4">
+    <fieldset>
+        <legend class="mb-3">Affichage de la page</legend>
+        <div class="mb-3">
+            <label for="page-name">Nom de la page</label>
+            <input type="text" name="page-name" id="page-name" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="page-url">URL de la page</label>
+            <input type="text" name="page-url" id="page-url" class="form-control">
+        </div>
+        <div class="mb-5">
+            <label for="page-content">Contenu de la page</label>
+            <ckeditor [editor]="Editor" data=""></ckeditor>
+        </div>
+        <button class="btn btn-primary px-4 py-3" type="submit">Créer la page</button>
+    </fieldset>
+</form>

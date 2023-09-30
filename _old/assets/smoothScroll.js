@@ -12,7 +12,7 @@ export class ScrollWeb {
             renderByPixels: true,
             continuousScrolling: true,
             delegateTo: document,
-            thumbMinSize: 15
+            thumbMinSize: 20
             // alwaysShowTracks: true,
         });
         return scrollbar;
